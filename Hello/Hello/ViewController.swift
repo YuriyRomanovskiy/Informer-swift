@@ -64,6 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 destinationController.descriptionString = (itemList?.item[indexPath.row]?.desc1)!
                 destinationController.nameString = (itemList?.item[indexPath.row]?.name)!
                 destinationController.fullDescriptionString = (itemList?.item[indexPath.row]?.fullDesc)!
+                destinationController.linkString = (itemList?.item[indexPath.row]?.link)!
                 
             }
         }
