@@ -17,6 +17,7 @@
 		7E2D1BA2202706AD00E8E52B /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D1BA1202706AD00E8E52B /* HelloTests.swift */; };
 		7E2D1BAD202706AD00E8E52B /* HelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D1BAC202706AD00E8E52B /* HelloUITests.swift */; };
 		7E2D1BBB20272FC700E8E52B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D1BBA20272FC700E8E52B /* CustomTableViewCell.swift */; };
+		7EFA6FA7202DC7C700D1164F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA6FA6202DC7C700D1164F /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7E2D1BAC202706AD00E8E52B /* HelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloUITests.swift; sourceTree = "<group>"; };
 		7E2D1BAE202706AD00E8E52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E2D1BBA20272FC700E8E52B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7EFA6FA6202DC7C700D1164F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				7E2D1B95202706AD00E8E52B /* LaunchScreen.storyboard */,
 				7E2D1B98202706AD00E8E52B /* Info.plist */,
 				7E1D652A202A230C005E45ED /* DetailViewController.swift */,
+				7EFA6FA6202DC7C700D1164F /* WebViewController.swift */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				7E2D1BBB20272FC700E8E52B /* CustomTableViewCell.swift in Sources */,
 				7E2D1B8F202706AD00E8E52B /* ViewController.swift in Sources */,
 				7E2D1B8D202706AD00E8E52B /* AppDelegate.swift in Sources */,
+				7EFA6FA7202DC7C700D1164F /* WebViewController.swift in Sources */,
 				7E1D652B202A230C005E45ED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

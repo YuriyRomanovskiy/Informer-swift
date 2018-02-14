@@ -12,32 +12,41 @@ class DetailViewController: UIViewController {
 
     
     
+    @IBOutlet weak var LinkBtn: UIButton!
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var NameLbl: UILabel!
     @IBOutlet weak var fullDescriptionLbl: UILabel!
     @IBOutlet weak var DetailItemImage: UIImageView!
-    @IBOutlet weak var LinkLbl: UILabel!
+    
     var detailItemImage = ""
     var descriptionString = ""
     var fullDescriptionString = ""
     var nameString = ""
     var linkString = ""
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        LinkLbl.text = "link"
+        // Do any additional setup after loading the
         DetailItemImage.image = UIImage(named: detailItemImage)
         fullDescriptionLbl.text = fullDescriptionString
-        //fullDescriptionLbl.text = "saddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdsaddasdasdasdasdasdqqqqq"
         NameLbl.text = nameString
         descriptionLbl.text = descriptionString
-        LinkLbl.text = linkString
+        LinkBtn.setTitle(linkString, for: .normal)
         
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ItemWebSegue"{
+            //check later
+            let destinationController = segue.destination as! WebViewController
+            destinationController.linkString = linkString
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
