@@ -40,11 +40,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! CustomTableViewCell
         
-        cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
+        //cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
         
         cell.NameLbl.text = itemList?.item[indexPath.row]?.name
         cell.ItemImage.image = UIImage(named: (itemList?.item[indexPath.row]?.image1)!)
-        cell.ItemImage.layer.cornerRadius = cell.ItemImage.frame.height / 2
+        //cell.ItemImage.layer.cornerRadius = cell.ItemImage.frame.height / 2
         cell.DescriptionLbl.text = itemList?.item[indexPath.row]?.desc1
         cell.DescriptionLbl2.text = itemList?.item[indexPath.row]?.desc2
         

@@ -10,15 +10,13 @@ import UIKit
 
 class WebViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var DetailWebVIew: UIWebView!
-    @IBOutlet weak var ItemLinkLbl: UILabel!
+    
     
     var linkString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        ItemLinkLbl.text = linkString
-        
         DetailWebVIew.loadRequest(URLRequest(url: URL(string: linkString)!))
         // Do any additional setup after loading the view.
         //ItemLinkLbl.text = "hello"
